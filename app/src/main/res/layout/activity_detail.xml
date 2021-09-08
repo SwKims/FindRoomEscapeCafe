@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/detailToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_detailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/sb_font"
+                android:text="가게 이름"
+                android:textColor="@color/teal_200"
+                android:textSize="30sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/detailToolbar" />
+
+        <ImageView
+            android:id="@+id/iv_detail"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:src="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sb_font"
+            android:text="전화번호 : "
+            android:textColor="@color/teal_200"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_detail" />
+
+        <TextView
+            android:id="@+id/tv_phoneInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/sb_font"
+            android:text="전화번호"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_phone"
+            app:layout_constraintTop_toBottomOf="@id/iv_detail" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sb_font"
+            android:text="주소 : "
+            android:textColor="@color/teal_200"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_phone"
+            app:layout_constraintTop_toBottomOf="@id/tv_phoneInfo" />
+
+        <TextView
+            android:id="@+id/tv_addressInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/sb_font"
+            android:text="주소"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_phone"
+            app:layout_constraintTop_toBottomOf="@id/tv_phoneInfo" />
+
+        <TextView
+            android:id="@+id/tv_openTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sb_font"
+            android:text="영업시간 : "
+            android:textColor="@color/teal_200"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_phone"
+            app:layout_constraintTop_toBottomOf="@id/tv_address" />
+
+        <TextView
+            android:id="@+id/tv_openTimeInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/sb_font"
+            android:text="영업시간"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_phone"
+            app:layout_constraintTop_toBottomOf="@id/tv_addressInfo" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sb_font"
+            android:text="가격 : "
+            android:textColor="@color/teal_200"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_phone"
+            app:layout_constraintTop_toBottomOf="@id/tv_openTime" />
+
+        <TextView
+            android:id="@+id/tv_priceInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/sb_font"
+            android:text="가격"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_phone"
+            app:layout_constraintTop_toBottomOf="@id/tv_openTimeInfo" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/shareButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/sb_font"
+            android:text="공유하기"
+            android:textColor="@color/teal_200"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_price" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/reserveButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/sb_font"
+            android:text="예약하기"
+            android:textColor="@color/teal_200"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shareButton" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
