@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey">
@@ -69,7 +70,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:fontFamily="@font/sb_font"
-            android:text="전화번호"
+            android:text="정보 없음"
             android:textColor="@color/white"
             android:textSize="19sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +98,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:fontFamily="@font/sb_font"
-            android:text="주소"
+            android:text="정보 없음"
             android:textColor="@color/white"
             android:textSize="19sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -115,7 +116,7 @@
             android:textColor="@color/teal_200"
             android:textSize="19sp"
             app:layout_constraintEnd_toEndOf="@id/tv_phone"
-            app:layout_constraintTop_toBottomOf="@id/tv_address" />
+            app:layout_constraintTop_toBottomOf="@id/tv_addressInfo" />
 
         <TextView
             android:id="@+id/tv_openTimeInfo"
@@ -125,7 +126,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:fontFamily="@font/sb_font"
-            android:text="영업시간"
+            android:text="정보 없음"
             android:textColor="@color/white"
             android:textSize="19sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -144,7 +145,7 @@
             android:textColor="@color/teal_200"
             android:textSize="19sp"
             app:layout_constraintEnd_toEndOf="@id/tv_phone"
-            app:layout_constraintTop_toBottomOf="@id/tv_openTime" />
+            app:layout_constraintTop_toBottomOf="@id/tv_openTimeInfo" />
 
         <TextView
             android:id="@+id/tv_priceInfo"
@@ -154,7 +155,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:fontFamily="@font/sb_font"
-            android:text="가격"
+            android:text="정보 없음"
             android:textColor="@color/white"
             android:textSize="19sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -172,9 +173,12 @@
             android:text="공유하기"
             android:textColor="@color/teal_200"
             android:textSize="19sp"
+            android:drawableStart="@drawable/ic_share"
+            android:paddingStart="13dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_price" />
+            app:layout_constraintTop_toBottomOf="@id/tv_priceInfo"
+            tools:ignore="RtlSymmetry" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/reserveButton"
@@ -185,11 +189,15 @@
             android:background="@drawable/button_background"
             android:fontFamily="@font/sb_font"
             android:text="예약하기"
+            android:paddingStart="13dp"
+            android:visibility="invisible"
+            android:drawableStart="@drawable/ic_reserve"
             android:textColor="@color/teal_200"
             android:textSize="19sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/shareButton" />
+            app:layout_constraintTop_toBottomOf="@id/shareButton"
+            tools:ignore="RtlSymmetry" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

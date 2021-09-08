@@ -13,6 +13,6 @@ interface RoomService {
     @GET("/v5/api/search?=caller=")
     fun getRoomCafeList(
         @Query("query") query: String,
-        @Query("displayCount") displayCount: Int = 20
+        @Query("displayCount") displayCount: Int = 15
     ) : Call<RoomsResponse>
 }
