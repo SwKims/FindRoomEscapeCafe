@@ -28,3 +28,11 @@
 <img src="https://user-images.githubusercontent.com/71965874/132612454-56a614cf-0c25-4922-91a6-e58a6b6de74b.jpg" width="30%" height="20%">
 <img src="https://user-images.githubusercontent.com/71965874/132612455-c6741e7f-e295-4dba-a38e-fb0e9b5ef594.jpg" width="30%" height="20%">
 </p>
+
+#### 실행화면
+<p float="center">
+<img src="https://user-images.githubusercontent.com/71965874/132626510-96efbe8b-ffe6-4ed6-94db-55b1dae5c569.gif" width="30%" height="20%">
+</p>
+
+
+
