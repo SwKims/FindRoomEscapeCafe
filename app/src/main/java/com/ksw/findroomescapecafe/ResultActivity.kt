@@ -13,6 +13,7 @@ import com.ksw.findroomescapecafe.adapter.RoomViewPagerAdapter
 import com.ksw.findroomescapecafe.databinding.ActivityResultBinding
 import com.ksw.findroomescapecafe.databinding.BottomSheetBinding
 import com.ksw.findroomescapecafe.model.RoomsModel
+import com.ksw.findroomescapecafe.util.BaseAppCompatActivity
 import com.ksw.findroomescapecafe.util.Constant.Companion.LOCATION_PERMISSION_REQUEST_CODE
 import com.naver.maps.geometry.LatLng
 import com.naver.maps.map.*
@@ -26,7 +27,7 @@ import com.naver.maps.map.widget.LocationButtonView
  * Created by KSW on 2021-09-08
  */
 
-class ResultActivity : AppCompatActivity(), OnMapReadyCallback, Overlay.OnClickListener {
+class ResultActivity : BaseAppCompatActivity(), OnMapReadyCallback, Overlay.OnClickListener {
 
     private var binding: ActivityResultBinding? = null
 

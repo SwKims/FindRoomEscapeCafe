@@ -8,12 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.ksw.findroomescapecafe.databinding.ActivityDetailBinding
 import com.ksw.findroomescapecafe.model.RoomsModel
+import com.ksw.findroomescapecafe.util.BaseAppCompatActivity
 
 /**
  * Created by KSW on 2021-09-08
  */
 
-class DetailActivity : AppCompatActivity() {
+class DetailActivity : BaseAppCompatActivity() {
 
     private var binding: ActivityDetailBinding? = null
     override fun onCreate(savedInstanceState: Bundle?) {

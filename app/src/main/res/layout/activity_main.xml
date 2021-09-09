@@ -18,7 +18,7 @@
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="200dp"
         android:fontFamily="@font/sb_font"
         android:gravity="center"
         android:text="방탈출 카페 찾기"
@@ -41,7 +41,7 @@
         app:boxBackgroundColor="@color/white"
         app:boxStrokeColor="@color/grey"
         app:errorEnabled="true"
-        app:helperText="예시 - 강남, 강북"
+        app:helperText="예시 - 강남, 강북, 수원역"
         app:helperTextEnabled="true"
         app:helperTextTextColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,6 +56,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/sb_font"
             android:imeOptions="actionSearch"
+            android:inputType="text"
             android:textColor="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>

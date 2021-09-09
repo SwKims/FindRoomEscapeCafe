@@ -8,6 +8,7 @@ import com.ksw.findroomescapecafe.api.RoomService
 import com.ksw.findroomescapecafe.databinding.ActivityMainBinding
 import com.ksw.findroomescapecafe.model.RoomsModel
 import com.ksw.findroomescapecafe.model.RoomsResponse
+import com.ksw.findroomescapecafe.util.BaseAppCompatActivity
 import com.ksw.findroomescapecafe.util.Constant.Companion.BASE_URL
 import retrofit2.Call
 import retrofit2.Callback
@@ -15,7 +16,7 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseAppCompatActivity() {
 
     private var binding: ActivityMainBinding? = null
 
